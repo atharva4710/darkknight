@@ -1,6 +1,13 @@
 import os
 from flask import Flask, render_template
 
+# Load environment variables from .env file (if it exists)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed; use system environment variables
+
 # Basic Flask app for Plansphere.ai
 app = Flask(__name__)
 

@@ -5,3 +5,4 @@ openpyxl==3.1.2
 pulp==2.7.0
 werkzeug==2.3.7
 dnspython
+python-dotenv==1.0.0
